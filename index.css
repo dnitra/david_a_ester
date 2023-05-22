@@ -1,6 +1,12 @@
+/* take ./un_jour_merveilleux/UnJourMerveilleuxDemo-Regular.ttf  ./  */
+@font-face {
+  font-family: "un_jour_merveilleux";
+  src: url("./un_jour_merveilleux/UnJourMerveilleuxDemo-Regular.ttf");
+}
+
 html {
   box-sizing: border-box;
-  font-family: "barlow", sans-serif;
+  font-family: "Garbata", "barlow", sans-serif;
   text-align: center;
   font-weight: 100;
 }
@@ -25,9 +31,53 @@ p {
   font-size: 1.2rem;
   line-height: 2rem;
 }
+.header-nav {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(32, 60, 56);
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+.header-nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-family: "Garbata", "barlow", sans-serif;
+}
+.header-nav a:hover {
+  color: #f4e3ba;
+}
 .intro-img {
   width: 100%;
   height: auto;
+}
+.intro-img__heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(32, 60, 56);
+  font-size: 3rem;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "un_jour_merveilleux", sans-serif;
+  letter-spacing: 0.2rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .nas-pribeh {
   width: 100%;
@@ -213,8 +263,8 @@ p {
 }
 
 .form iframe {
-    width: 100%;
-    height: 800px;
+  width: 100%;
+  height: 800px;
 }
 @media screen and (max-width: 768px) {
   .foto_container {

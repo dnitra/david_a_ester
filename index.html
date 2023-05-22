@@ -15,13 +15,20 @@
     <title>Svatba Hoblíkovi</title>
   </head>
   <body>
-    <img
-      class="intro-img"
-      src="https://static.wixstatic.com/media/afe3c0_41ee349d3c8c4a6e9bb53b2e06c61431~mv2.jpg/v1/fill/w_1543,h_1080,al_c,q_85,enc_auto/afe3c0_41ee349d3c8c4a6e9bb53b2e06c61431~mv2.jpg"
-      alt="Svatba David a Ester"
-    />
 
-    <div class="nas-pribeh">
+    <nav class="header-nav">
+        <ul>
+            <li><a href="#nas-pribeh">Náš příběh</a></li>
+            <li><a href="#obrad">Obřad</a></li>
+            <li><a href="#oslava">Oslava</a></li>
+        <!-- info -->
+        <li><a href="#ubytovani">Informace</a></li>
+            <li><a href="#potvrzeni">Potvrzení účasti</a></li>
+        </ul>
+    </nav>
+    <object class="intro-img" data="zajicova.svg" type="image/svg+xml"></object>
+    <h1 class="intro-img__heading">David a Ester</h1>
+    <div id="nas-pribeh" class="nas-pribeh">
       <h2>NÁŠ PŘÍBĚH</h2>
       <p>
         Každý z nás viděl toho druhého poprvé na jiném místě, ale poprvé jsme se
@@ -51,13 +58,13 @@
       </p>
 
       <div class="foto_container">
-        <img src="./spol_foto_1.webp" alt="David a Ester spolu" />
-        <img src="./spol_foto_2.webp" alt="David a Ester spolu" />
-        <img src="./spol_foto_3.webp" alt="David a Ester spolu" />
+        <img src="./spol_foto_1.jpeg" alt="David a Ester spolu" />
+        <img src="./spol_foto_2.jpg" alt="David a Ester spolu" />
+        <img src="./spol_foto_3.jpeg" alt="David a Ester spolu" />
       </div>
     </div>
 
-    <div class="obrad">
+    <div id="obrad" class="obrad">
       <h2>OBŘAD</h2>
       <div class="img-container">
         <div class="img-container-item">
@@ -142,7 +149,7 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
-    <div class="oslava">
+    <div id="oslava" class="oslava">
       <h2>OSLAVA</h2>
       <div class="img-container">
         <div class="img-container-item">
@@ -446,15 +453,15 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
-    <div class="ubytovani">
+    <div id="ubytovani" class="ubytovani">
       <h2>UBYTOVÁNÍ</h2>
       <p>
-        Pokud budete potřebovat pomoc s dopravou na Ráj, obraťte se na nás.
-        Ubytování je možné přímo na místě hostiny Zámecká stáj Plandry (590 kč
-        na osobu). Další možnosti ubytování je v místní církvi.
+        Pokud budete potřebovat pomoc s dopravou na Ráj, obraťte se na nás v rámci formuláře níže.
+        Ubytování Vám také rádi zařídíme přímo na místě hostiny Zámecká stáj Plandry (590 kč
+        na osobu). Další možnosti ubytování je v místní církvi na zemi.
       </p>
     </div>
-    <div class="harmonogram">
+    <div id="harmonogram" class="harmonogram">
       <h2>HARMONOGRAM</h2>
       <div class="schedule">
         <img
@@ -486,7 +493,7 @@
         <p>17:00 hostina</p>
       </div>
     </div>
-    <div class="dresscode">
+    <div id="dresscode" class="dresscode">
       <h2>DRESS CODE</h2>
       <p>CO NA SEBE A V JAKÉM STYLU BUDE SVATBA?</p>
       <p>
@@ -495,11 +502,11 @@
       </p>
       <p><div class="circles lightgreen"></div><div class="circles pink"></div><div class="circles darkgreen"></div><div class="circles beige"></div></p>
     </div>
-    <div class="darky">
+    <div id="dary" class="darky">
         <h2>TIPY NA DÁRKY</h2>
 <p>V prvním roce našeho manželství se chystáme pokračovat ve studiu na biblické škole v Americe. Zejména kvůli omezenému prostoru v zavazadlech nám pomůže, když se váš svatební dar vejde do obálky.</p>
     </div>
-    <div class="osoby">
+    <div id="svedci" class="osoby">
 <h2>DŮLEŽITÉ OSOBY</h2>
 <div class="osoby_container">
     <div class="osoby_container-item">
@@ -516,8 +523,8 @@
     </div>
     </div>
     </div>
-    <div class="form">
-      <h2>RSVP</h2>
+    <div id="potvrzeni" class="form">
+      <h2>POTVRZENÍ ÚČASTI</h2>
       <svg class="form-img" preserveAspectRatio="xMidYMid meet" data-bbox="37.564 36 124.952 127.975" xmlns="http://www.w3.org/2000/svg" viewBox="37.564 36 124.952 127.975" role="presentation" aria-hidden="true">
     <g>
         <path d="M157 66.8C145.8 46 116.4 36 96.1 36c-20.3 0-38.4 12-45 21.2-6.6 9.2-10.3 20.1-12.5 31.2-2.5 13-1.7 44.1 16.5 60 19.5 17.1 40.7 17.1 58 14 25.2-4.5 42-29.5 47.5-54.4 2.9-13.8 3.1-28.8-3.6-41.2zm-22.3 27.6l-24.6 9c-.3 1.1-.8 2.1-1.5 3.1-1.8 2.4-4.7 3.9-7.8 3.9-1.1 0-2.2-.2-3.3-.6-3.5-1.2-6.2-4.3-6.9-7.8-.7-3 .3-6.1 2.6-8.3 1.4-1.4 3.3-2.3 5.2-2.7l16.7-38.2c.8-1.8 2.3-2.9 4.2-2.9 1.8 0 3.6 1 4.6 2.6 1 1.5 1.2 3.4.4 5.1l-15.9 36.3c.1.1.3.1.4.2l22.3-8.1c.5-.2 1.1-.3 1.6-.3 2.3 0 4.3 1.7 4.7 4 .3 2.2-.7 4-2.7 4.7z"></path>
