@@ -6,7 +6,7 @@
 
 html {
   box-sizing: border-box;
-  font-family: "Garbata", "barlow", sans-serif;
+  font-family: "Georgia", sans-serif;
   text-align: center;
   font-weight: 100;
 }
@@ -57,7 +57,7 @@ p {
   font-size: 1.2rem;
   font-weight: 100;
   letter-spacing: 0.1rem;
-  font-family: "Garbata", "barlow", sans-serif;
+  font-family: "Georgia", "barlow", sans-serif;
 }
 
 .header-nav a:hover {
@@ -116,8 +116,6 @@ p {
     display: flex;
   }
 }
-
-
 
 .intro-img {
   width: 100%;
